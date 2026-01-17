@@ -97,5 +97,7 @@ func main(){
 			// Outputs the sum
 			fmt.Println(sum)
 		}
-	} 
+	} else{
+		fmt.Println("Invaild input")
+	}
 }
