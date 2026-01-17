@@ -37,5 +37,24 @@ func main(){
 			// Outputs the sum
 			fmt.Println(sum)
 		}
+	} else if *sub != "" {
+		// Splits the numbers
+		numbers := strings.SplitAfter(*add, " ")
+
+		// Converts the numbers in the arguement to integers
+		num_1, err := strconv.Atoi(numbers[0])
+		num_2, err := strconv.Atoi(numbers[1])
+
+		// Checks if the error is not nil
+		if err != nil{
+			// Outputs the error message
+			fmt.Println("Error", err)
+		} else {
+			// Calculates the sum
+			sum := num_1 - num_2
+			
+			// Outputs the sum
+			fmt.Println(sum)
+		}
 	}
 }
