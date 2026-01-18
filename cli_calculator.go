@@ -7,6 +7,33 @@ import (
 	"strconv"
 )
 
+// Function to parse two ints
+func parseTwoInts(input string) (int, int, error) {
+	// Splits the strings at a space
+	parts := strings.Split(input, " ")
+	// Checks if the parts are greater than two
+	if len(parts) != 2 {
+		// Returns an error message
+		return 0, 0, fmt.Errorf("please provide exactly two numbers")
+	}
+
+	// converts the string to integer
+	num_1, err := strconv.Atoi(parts[0])
+	// Checks for error
+	if err != nil {
+		// Returns failed conversion
+		return 0, 0, err
+	}
+
+	//
+	num_2, err := strconv.Atoi(parts[1])
+	if err != nil {
+		return 0, 0, err
+	}
+
+	return num_1, num_2, nil
+}
+
 func main(){
 	// Defines command line flags i will be using
 	add := flag.String("add","", "The numbers you want to add together")
