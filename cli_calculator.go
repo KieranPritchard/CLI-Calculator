@@ -25,12 +25,15 @@ func parseTwoInts(input string) (int, int, error) {
 		return 0, 0, err
 	}
 
-	//
+	// converts the string to integer
 	num_2, err := strconv.Atoi(parts[1])
+	// Checks for error
 	if err != nil {
+		// Returns failed conversion
 		return 0, 0, err
 	}
 
+	// Returns numbers and errors
 	return num_1, num_2, nil
 }
 
