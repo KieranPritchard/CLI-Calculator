@@ -41,7 +41,7 @@ The final result is a simple but functional CLI calculator that supports additio
 **1. Clone The Repository:**
 * Use Git to clone the project:
 ```
-git clone https://github.com/KieranPritchard/Remote-Command-Execution.git
+git clone https://github.com/KieranPritchard/CLI-Calculator.git
 ```
 **2. Build the Program:**
 * Navigate to the project directory.
@@ -53,19 +53,19 @@ go build
 * Use one of the following flags with two numbers inside quotes:
 * Addition:
 ```
-./Remote-Command-Execution -add "5 3"
+./CLI-Calculator -add "5 3"
 ```
 * Subtraction:
 ```
-./Remote-Command-Execution -sub "10 4"
+./CLI-Calculator -sub "10 4"
 ```
 * Multiplication:
 ```
-./Remote-Command-Execution -multi "6 7"
+./CLI-Calculator -multi "6 7"
 ```
 * Division:
 ```
-./Remote-Command-Execution -div "20 5"
+./CLI-Calculator -div "20 5"
 ```
 * The program will output the result directly to the terminal.
 
