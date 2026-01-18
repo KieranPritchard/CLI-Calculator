@@ -89,7 +89,7 @@ func main(){
 	// Checks for division
 	} else if *div != "" {
 		// Gets the two numbers and the error variaable from the function
-		num_1, num_2, err := parseTwoInts(*sub)
+		num_1, num_2, err := parseTwoInts(*div)
 		// Checks if error isnt nil
 		if err != nil {
 			// Outputs the error
