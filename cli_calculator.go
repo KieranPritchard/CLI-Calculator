@@ -49,85 +49,57 @@ func main(){
 
 	// Checks for the add flag
 	if *add != "" {
-		// Splits the numbers
-		numbers := strings.SplitAfter(*add, " ")
-
-		// Converts the numbers in the arguement to integers
-		num_1, err := strconv.Atoi(numbers[0])
-		num_2, err := strconv.Atoi(numbers[1])
-
-		// Checks if the error is not nil
-		if err != nil{
-			// Outputs the error message
-			fmt.Println("Error", err)
-		} else {
-			// Calculates the sum
-			sum := num_1 + num_2
-			
-			// Outputs the sum
-			fmt.Println(sum)
+		// Gets the two numbers and the error variaable from the function
+		num_1, num_2, err := parseTwoInts(*add)
+		// Checks if error isnt nil
+		if err != nil {
+			// Outputs the error
+			fmt.Println("Error:", err)
+			// Returns nothing
+			return
 		}
+		// Outputs the sum
+		fmt.Println(num_1 + num_2)
 	// Checks for subtraction
 	} else if *sub != "" {
-		// Splits the numbers
-		numbers := strings.SplitAfter(*add, " ")
-
-		// Converts the numbers in the arguement to integers
-		num_1, err := strconv.Atoi(numbers[0])
-		num_2, err := strconv.Atoi(numbers[1])
-
-		// Checks if the error is not nil
-		if err != nil{
-			// Outputs the error message
-			fmt.Println("Error", err)
-		} else {
-			// Calculates the sum
-			sum := num_1 - num_2
-			
-			// Outputs the sum
-			fmt.Println(sum)
+		// Gets the two numbers and the error variaable from the function
+		num_1, num_2, err := parseTwoInts(*sub)
+		// Checks if error isnt nil
+		if err != nil {
+			// Outputs the error
+			fmt.Println("Error:", err)
+			// Returns nothing
+			return
 		}
+		// Outputs the sum
+		fmt.Println(num_1 - num_2)
 	// Checks for multiplication
 	} else if *multi != "" {
-		// Splits the numbers
-		numbers := strings.SplitAfter(*add, " ")
-
-		// Converts the numbers in the arguement to integers
-		num_1, err := strconv.Atoi(numbers[0])
-		num_2, err := strconv.Atoi(numbers[1])
-
-		// Checks if the error is not nil
-		if err != nil{
-			// Outputs the error message
-			fmt.Println("Error", err)
-		} else {
-			// Calculates the sum
-			sum := num_1 * num_2
-			
-			// Outputs the sum
-			fmt.Println(sum)
+		// Gets the two numbers and the error variaable from the function
+		num_1, num_2, err := parseTwoInts(*multi)
+		// Checks if error isnt nil
+		if err != nil {
+			// Outputs the error
+			fmt.Println("Error:", err)
+			// Returns nothing
+			return
 		}
+		// Outputs the sum
+		fmt.Println(num_1 * num_2)
 	// Checks for division
 	} else if *div != "" {
-		// Splits the numbers
-		numbers := strings.SplitAfter(*add, " ")
-
-		// Converts the numbers in the arguement to integers
-		num_1, err := strconv.Atoi(numbers[0])
-		num_2, err := strconv.Atoi(numbers[1])
-
-		// Checks if the error is not nil
-		if err != nil{
-			// Outputs the error message
-			fmt.Println("Error", err)
-		} else {
-			// Calculates the sum
-			sum := num_1 / num_2
-			
-			// Outputs the sum
-			fmt.Println(sum)
+		// Gets the two numbers and the error variaable from the function
+		num_1, num_2, err := parseTwoInts(*sub)
+		// Checks if error isnt nil
+		if err != nil {
+			// Outputs the error
+			fmt.Println("Error:", err)
+			// Returns nothing
+			return
 		}
-	} else{
-		fmt.Println("Invaild input")
+		// Outputs the sum
+		fmt.Println(num_1 / num_2)
+	} else {
+		fmt.Println("Invalid Input")
 	}
 }
