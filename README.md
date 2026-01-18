@@ -1,18 +1,18 @@
-# Remote Command Execution
+# CLI Calculator
 
 <div align="center">
 
-<img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/CLI-Calculator">
 
-<img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/CLI-Calculator">
 
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/CLI-Calculator">
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/CLI-Calculator">
 
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/CLI-Calculator">
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/Remote-Command-Execution">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/CLI-Calculator">
 
 </div>
 
